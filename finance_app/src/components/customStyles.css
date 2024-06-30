@@ -1,0 +1,10 @@
+
+.custom-skeleton .ant-skeleton-title,
+.custom-skeleton .ant-skeleton-paragraph > li {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.custom-skeleton .ant-skeleton-title::after,
+.custom-skeleton .ant-skeleton-paragraph > li::after {
+  background: rgba(255, 255, 255, 0.1);
+}

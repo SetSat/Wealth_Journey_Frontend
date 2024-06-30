@@ -1,0 +1,46 @@
+.signup-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #222831;
+    padding: 0 20px;
+    color: white;
+  }
+  
+  .signup-card {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    background-color: #31363F; 
+    color: white;
+    margin-left: 13rem;
+  }
+  
+  .signup-svg-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+  }
+  
+  .floating-svg {
+    width: 50%; 
+    height: auto;
+    animation: float 4s ease-in-out infinite; 
+    filter: drop-shadow(0 0 10px #000); 
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,69 @@
+.landing-page {
+    height: 100vh;
+    background: url("../assets/19114052_6081800.jpg") no-repeat center center/cover;
+    color: white;
+  }
+  
+  .header {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .brand-name {
+    color: #4FFBDF;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links button {
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin-right: 3rem;
+  }
+  
+  .text-container {
+    padding: 20px;
+    color: #4FFBDF;
+  }
+  
+  .title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #4FFBDF;
+  }
+  
+  .keywords {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .get-started-button {
+    font-size: 18px;
+    background-color: rgb(91, 235, 78); 
+    border-color: rgb(91, 235, 78); 
+    box-shadow: 0 0 10px rgb(91, 235, 78); 
+    transition: box-shadow 0.3s ease; 
+  }
+  
+  .get-started-button:hover {
+    box-shadow: 0 0 20px rgb(91, 235, 78); 
+  }
+  
+  .financefreedom {
+    color: #4FFBDF;
+  }
+  
