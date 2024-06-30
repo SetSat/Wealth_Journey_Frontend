@@ -46,7 +46,7 @@ const Dashboard = () => {
 
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, [name]);
 
   const handleLogout = () => {

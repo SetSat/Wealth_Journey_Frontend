@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { login } from "../Redux/authSlice";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./SignUpPage.css"; 
+import "./SignUpPage.css";
 import srcimage from "../assets/spaceman-removebg-preview (1).png";
 
 const { Title } = Typography;
@@ -19,11 +19,14 @@ const SignUpPage = () => {
 
   const handleSignUp = async () => {
     try {
-      const response = await axios.post("http://localhost:4000/api/signup", {
-        name,
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://wealthjourney.onrender.com/api/signup",
+        {
+          name,
+          email,
+          password,
+        }
+      );
       form.resetFields();
 
       if (response.status === 200) {
@@ -60,7 +63,7 @@ const SignUpPage = () => {
               label="Name"
               name="name"
               rules={[{ required: true, message: "Please input your name!" }]}
-              labelCol={{ style: { color: 'white' } }} // Set label color to white
+              labelCol={{ style: { color: "white" } }} // Set label color to white
             >
               <Input
                 value={name}
@@ -79,7 +82,7 @@ const SignUpPage = () => {
                   type: "email",
                 },
               ]}
-              labelCol={{ style: { color: 'white' } }} // Set label color to white
+              labelCol={{ style: { color: "white" } }} // Set label color to white
             >
               <Input
                 value={email}
@@ -94,7 +97,7 @@ const SignUpPage = () => {
               rules={[
                 { required: true, message: "Please input your password!" },
               ]}
-              labelCol={{ style: { color: 'white' } }} // Set label color to white
+              labelCol={{ style: { color: "white" } }} // Set label color to white
             >
               <Input.Password
                 value={password}
@@ -114,16 +117,13 @@ const SignUpPage = () => {
             onClick={() => navigate("/login")}
             style={{ color: "#4FFBDF", textAlign: "center" }}
           >
-            Already have an account? <span style={{ color: "#FFD700" }}>Log in</span>
+            Already have an account?{" "}
+            <span style={{ color: "#FFD700" }}>Log in</span>
           </Button>
         </Space>
       </Card>
       <div className="signup-svg-container">
-        <img
-          src={srcimage}
-          alt="Floating SVG"
-          className="floating-svg"
-        />
+        <img src={srcimage} alt="Floating SVG" className="floating-svg" />
       </div>
     </div>
   );

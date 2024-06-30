@@ -26,13 +26,13 @@ const LandingPage = () => {
       dispatch(setLoading(true)); // Start loading
       try {
         const incomeResponse = await axios.get(
-          "http://localhost:4000/api/income",
+          "https://wealthjourney.onrender.com/api/income",
           {
             headers: { Authorization: `Bearer ${tokenFromRedux}` },
           }
         );
         const expenseResponse = await axios.get(
-          "http://localhost:4000/api/expense",
+          "https://wealthjourney.onrender.com/api/expense",
           {
             headers: { Authorization: `Bearer ${tokenFromRedux}` },
           }

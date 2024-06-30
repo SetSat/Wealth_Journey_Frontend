@@ -20,7 +20,7 @@ const Income = () => {
   useEffect(() => {
     const fetchIncome = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/income", {
+        const response = await axios.get("https://wealthjourney.onrender.com/api/income", {
           headers: { Authorization: `Bearer ${tokenFromRedux}` },
         });
         dispatch(setIncomes(response.data));
@@ -34,7 +34,7 @@ const Income = () => {
   const handleAddIncome = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/income",
+        "https://wealthjourney.onrender.com/api/income",
         { amount, description },
         { headers: { Authorization: `Bearer ${tokenFromRedux}` } }
       );

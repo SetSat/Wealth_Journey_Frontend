@@ -17,7 +17,7 @@ const LoginPage = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:4000/api/login", {
+      const response = await axios.post("https://wealthjourney.onrender.com/api/login", {
         email,
         password,
       });
